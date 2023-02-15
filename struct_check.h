@@ -1,5 +1,5 @@
-#ifndef __STRUCT_SIZE_CHECK_H__
-#define __STRUCT_SIZE_CHECK_H__
+#ifndef __STRUCT_CHECK_H__
+#define __STRUCT_CHECK_H__
 
 #include "stddef.h"
 
@@ -36,4 +36,4 @@
     extern int offset_of_##member##_in_##type##_is_error       \
         [1 / !!(offsetof(type, member) == (value))]
 
-#endif /*__STRUCT_SIZE_CHECK_H__*/
+#endif /*__STRUCT_CHECK_H__*/
